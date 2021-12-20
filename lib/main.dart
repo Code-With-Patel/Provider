@@ -1,5 +1,8 @@
 import 'package:code_with_patel/state/app_state.dart';
 import 'package:code_with_patel/view/home_page.dart';
+import 'package:code_with_patel/view/home_state.dart';
+import 'package:code_with_patel/widget/first_page.dart';
+import 'package:code_with_patel/widget/second_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,7 +20,7 @@ class MyApp extends StatelessWidget {
 
       child:const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: HomePage(),
+        home: HomeState(),
       ),
     );
   }
