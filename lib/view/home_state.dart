@@ -13,7 +13,7 @@ class HomeState extends StatelessWidget {
     var appProvider=Provider.of<AppState>(context,listen: false);
     return Scaffold(
       floatingActionButton: FloatingActionButton(
-        child: Icon(CupertinoIcons.arrow_up_arrow_down_circle),
+        child:const Icon(CupertinoIcons.arrow_up_arrow_down_circle),
         onPressed: (){
         appProvider.updateWidget();
         },

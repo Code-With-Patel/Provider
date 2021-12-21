@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:code_with_patel/model/data_model.dart';
 import 'package:flutter/cupertino.dart';
 
 class AppState extends ChangeNotifier {
@@ -43,6 +44,14 @@ class AppState extends ChangeNotifier {
 
   void updateWidget() {
     change = !change;
+    notifyListeners();
+  }
+
+  ///Provider working with Rest Api
+  List<DataModel> dataList = [];
+
+  void updateDataModel(List<DataModel> dataList) {
+    this.dataList = dataList;
     notifyListeners();
   }
 }
